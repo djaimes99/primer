@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	
+	<head>
+		<title>Primer Ejemplo Javascript</title>
+		<meta charset="UTF-8">
+		
+	</head>
+
+
+	<body>
+		<script>
+            /*Realizar un programa que pida la carga de dos vectores numéricos. 
+            Obtener la suma de los dos vectores, dicho resultado guardarlo 
+            en un tercer vector del mismo tamaño. Sumar componente a componente.
+            El tamaño del vector es a elección*/
+		
+			
+			function cargarEle1(ele1){
+				var f;
+				for(f=0; f<ele1.length; f++){
+                    var v;
+                    v = prompt('Carga Vector 1, elemento['+f+']:','');
+                    ele1[f] = parseInt(v);
+                }
+			}
+
+            function cargarEle2(ele2){
+				var f;
+				for(f=0; f<ele2.length; f++){
+                    var v;
+                    v = prompt('Carga Vector 2, elemento['+f+']:','');
+                    ele2[f] = parseInt(v);
+                }
+			}
+
+            function obtenersuma(ele1, ele2){
+                suma = new Array(4);
+                var f;
+                for(f=0; f<ele1.length; f++){
+                    suma[f]= ele1[f] + ele2[f];
+                    
+                    
+
+                }
+                document.write('Lista Vector Suma:<br>');
+                for(f=0; f<suma.length; f++){
+                    document.write('Vector Suma: '+suma[f]+'<br>');
+                }
+                
+
+            }
+            var ele1, ele2, suma;
+            ele1 = new Array(4);
+            cargarEle1(ele1);
+            ele2 = new Array(4);
+            cargarEle2(ele2);
+            
+
+            //document.write('<br>');
+            obtenersuma(ele1, ele2);
+			
+		
+		</script>
+	</body>
+</html>
