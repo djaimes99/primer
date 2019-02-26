@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	
+	<head>
+		<title>Primer Ejemplo Javascript</title>
+		<meta charset="UTF-8">
+		
+	</head>
+
+
+	<body>
+		<script>
+			var numero;
+			do{
+				numero= prompt("Ingrese un nro entre 0 y 999", "");
+				numero = parseInt(numero);
+				if(numero<10){
+					document.write('Tiene 1 digito!!');
+				}else{
+
+					if(numero>10 && numero<100){
+						document.write('Tiene 2 digitos!!');
+					}else{
+
+						document.write('Tiene 3 digitos!!');
+					}
+				}
+			}while(numero!=0);
+			
+			
+		</script>
+	</body>
+</html>
